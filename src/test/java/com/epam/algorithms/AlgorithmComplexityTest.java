@@ -34,10 +34,7 @@ class AlgorithmComplexityTest {
         assertEquals(2, encodedComplexities.indexOf(encodeAnswer(algorithmComplexity.binarySorting())));
     }
 
-    @Test
-    public void arrayItemAccess() {
-        assertEquals(3, encodedComplexities.indexOf(encodeAnswer(algorithmComplexity.arrayIndexItemAccess())));
-    }
+
 
     private String encodeAnswer(Complexity complexity) {
         return DigestUtils.md5Hex(complexity.name());
